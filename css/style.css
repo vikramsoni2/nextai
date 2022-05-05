@@ -200,6 +200,7 @@ nav a:hover img, nav a:active img {
   }
 }
 .btn {
+  font-weight: 400;
   border: 2px solid var(--clr-accent);
   padding: 10px 20px;
   border-radius: 10px;
