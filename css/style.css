@@ -9,6 +9,8 @@
   --clr-b-primary: #3fb27f;
   --clr-b-primary-light: hsl(153, 48%, 55%);
   --clr-b-secondary: #000;
+  --c-head-primary: rgb(225, 225, 225, 0.87);
+  --c-head-primary-light: #eaeaea;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -89,7 +91,7 @@ h1, h2, h3, h4, h5, nav a {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.3;
-  color: rgba(225, 225, 225, 0.87);
+  color: var(--c-head-primary);
 }
 
 h1 {
@@ -146,6 +148,9 @@ header {
   font-weight: 800;
   font-size: 2.5rem;
 }
+.brand span {
+  color: var(--c-head-primary-light);
+}
 .brand span:first-child {
   color: var(--clr-b-primary-light);
 }
@@ -171,6 +176,7 @@ nav a img {
 
 nav a:hover, nav a:active {
   font-weight: 400;
+  color: var(--c-head-primary-light);
 }
 nav a:hover img, nav a:active img {
   opacity: 0;
