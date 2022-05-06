@@ -162,15 +162,18 @@ nav {
   gap: 10px;
   /* Safari 12+ */
   text-align: right;
+  place-items: end;
 }
 
 nav a {
   font-size: 1.25rem;
   font-weight: 200;
-  position: relative;
+  white-space: nowrap;
 }
 nav a img {
+  display: inline;
   opacity: 0;
+  margin-left: 5px;
 }
 
 nav a:hover, nav a:active {
@@ -222,6 +225,7 @@ nav a:hover img, nav a:active img {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: -25px;
   padding-bottom: 3rem;
 }
 .hero h1 {

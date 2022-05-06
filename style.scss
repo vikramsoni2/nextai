@@ -142,14 +142,17 @@ nav {
     grid-gap: 8px; /* Safari 10-11 */
     gap: 10px;      /* Safari 12+ */
     text-align: right;
+    place-items: end;
 }
 
 nav a {
     font-size: 1.25rem;
     font-weight: 200;
-    position: relative;
+    white-space: nowrap;
     img {
+        display: inline;
         opacity: 0;
+        margin-left: 5px;
     }
 }
 
@@ -188,6 +191,7 @@ nav a:hover, nav a:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top:-25px;
     padding-bottom: 3rem;
     h1 {
         font-size: 3rem;
