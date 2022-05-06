@@ -18,7 +18,8 @@
     "dev": "npm-run-all copy --parallel watch serve",
 
     "build": "npm-run-all copy:html build:*",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "deploy": "git push origin :gh-pages && git subtree push --prefix public origin gh-pages"
   },
   "dependencies": {
     "autoprefixer": "^10.4.7",
