@@ -121,7 +121,7 @@ a {
 }
 
 header {
-    padding: 3.125rem;
+    padding: 3rem 2rem 3rem 3rem;
     padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
@@ -191,37 +191,35 @@ nav a:hover, nav a:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top:-25px;
+    margin-top:50px;
     padding-bottom: 3rem;
     h1 {
-        font-size: 3rem;
-        max-width: 730px;
+        font-size: 2rem;
+        max-width: 80vw;
         margin-bottom: 3rem;
-        background: radial-gradient(ellipse at center, #eff1ff 10%, #000 100%);
-        background-size: 250% 180%;
-        background-position: center center;
-        background-clip: text; 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         letter-spacing:0.5px;
+        color: var(--c-head-primary-light);
+        // background: radial-gradient(ellipse at center, #eff1ff 10%, #000 100%);
+        // background-size: 250% 180%;
+        // background-position: center center;
+        // background-clip: text; 
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        
     }
     h4{
+        max-width: 80vw;
         margin-bottom: 2rem;
     }
 }
 
-.container-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 3.125rem;
-    gap: 2rem;
-}
+
 
 .card {
     background-color: var(--bg-primary-light);
     padding: 1.5rem;
 
-    h5{
+    h5 {
         display: flex;
         align-items: center;
         svg {
@@ -234,4 +232,21 @@ nav a:hover, nav a:active {
 footer {
     background-color: var(--clr-secondary);
     min-height: 100px;
+}
+
+@media (min-width:800px){
+
+    .hero {
+        margin-top:10px;
+        h1 {
+            font-size: 3rem;
+            max-width: 70vw;
+        }
+    }
+    .container-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3.125rem;
+        gap: 2rem;
+    }
 }
